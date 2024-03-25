@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8aa3f7368b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" height="100" width="100">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h3>Hello It's Me</h3>
+                <h1><span>Kamran Khan</span></h1>
+                <p>I am a Full Stack Developer with a profound passion <br> for web design, having acquired proficiency through <br> dedicated learning and practical experience.</p>
+                <!-- <h1>Hi, I'm <span>Kamran</span><br> from Kolkata, India</h1> -->
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about5.png" width="300" height="350">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an entry-level Full Stack Developer with a profound passion for web design, having acquired proficiency through dedicated learning and practical experience.
+
+                        My Journey started as a Mechanical Engineer, but my love for coding and the desire to develop creative web applications led me to switch careers to IT. Now, I'm on an exciting path, eager to collaborate with teams and contribute to innovative projects. 
+                        
+                        I have completed numerous projects as a front-end developer, where each challenge encountered served as a valuable learning opportunity, contributing to my growth in the field.
+                        
+                        I also had a super rewarding internship. It helped me learn even more and become more skilled in web development.
+                        
+                        Before I got into IT, I worked as a mechanical engineer for two years. It was a fulfilling job where I learned a lot. Dealing with challenges during that time helped me become better at solving problems and growing professionally.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, React JS, Redux js, <br> MonogoDB, Express.js, Node.js</li>
+                            <!-- Add more skills as needed -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Full Stack Developer Trainee</span><br> AccioJob <br> from  Oct 2022 to 2024</li>
+                            <li><span>Apprenticeship</span><br>Saharsa College Of Engineering <br> from  May 2022 to july 2023</li>
+                            <li><span>Mechanical Engineer</span><br>Mitesh Auto Ancillary Private Limited <br> from  Nov 2019 to May 2020</li>
+                            
+                            <!-- Add more experience details as needed -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor's in Mechanical Engineering</span><br>Maulana Abul Kalam Azad University of Technology, West Bengal <br> from  Jun 2015 to July 2019 <br>GRADE: A </li>
+                            <li><span>12th</span><br>Bihar School Examinations Board <br> from  May 2011 to May 2013 <br>GRADE: A </li>
+                            <li><span>10th</span><br>Bihar School Examinations Board <br> from  May 2010 to May 2011 <br>GRADE: A </li>
+                            <!-- Add more education details as needed -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Built a User-friendly web application for tracking and managing cryptocurrency.
+                        <br>• Used React JS, MUI, Framer Motion, CoinGecko API, and Chart.js for a
+                        comprehensive crypto-currency tracking experience.
+                        <br>• It Offers real-time updates on portfolio values and market prices</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Built a Student Result management system application to help the admin
+                        store various data such as course result declaration, student details, etc.
+                        <br>• It enables efficient creation, reading, updating, and deletion actions on
+                        student profiles. It also provides a search facility to see your details.
+                        <br>• Utilized JavaScript for dynamic content without page reloads.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App design</h2>
+                    
+                    <p>Built an E-commerce platform using HTML, CSS, and JavaScript for
+                        streamlined online shopping.
+                        <br>• It has a user-friendly interface for purchasing from a diverse catalog.
+                        <br>• It provides User authentication, secure login, and profile management
+                        facilities.
+                        <br>• It has an Integration with secure payment gateways for trust and security.
+                        Studen</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+<div id="portfolio">
+    <div class="container">
+<h1 class="sub-title">My projects</h1>
+<div class="worklist">
+<div class="work">
+    <img src="iphone.png" height="500" width="300">
+    <div class="layer">
+        <h3>Crypto Tracker App</h3>
+        <p>Built a User-friendly web application for tracking and managing cryptocurrency</p>
+        <a href="https://crypto-project-ebon.vercel.app//"><i class="fa-solid fa-up-right-from-square"></i></a>
+    </div>
+</div>
+<div class="work">
+    <img src="music.png" height="450" width="250">
+    <div class="layer">
+        <h3>Game and Music App</h3>
+        <p>Implemented user input handling, game logic, and dynamic updating of the game board.</p>
+        <a href="https://tic-tac-toe-1-nine.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+    </div>
+</div>
+<div class="work">
+    <img src="shopingcart.png" height="450" width="300">
+    <div class="layer">
+        <h3>ShopingCart App</h3>
+        <p>Built an E-commerce platform using HTML, CSS, and JavaScript for
+            streamlined online shopping.</p>
+        <a href="https://kamrankhan0001.github.io/shoping-application/"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+    </div>
+
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>kamranbgp15@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7059400392</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/md-kamran-khan-05b72a147/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/MDKAMRANKH"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/kamranbgp15/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011326986244"><i class="fa-brands fa-facebook"></i></a>
+                    
+                </div>
+                <a href="cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>   
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © khan. Made with <i class="fa-solid fa-heart"></i> by Kamran</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sidemeu= document.getElementById("sidemenu");
+
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxOG3dJw_lVC7ob6iDIN2LfellbCjqwnZjaKXhOYRdpUxehKquA4fpAQblvTYGh3mkVfA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(()=>{
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
